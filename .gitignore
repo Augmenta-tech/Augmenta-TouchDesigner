@@ -1,2 +1,4 @@
 TOE Examples/Augmenta.*.toe
 TOE Examples/Backup
+TOE Examples/CrashAutoSave.*
+*.dmp
