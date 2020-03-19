@@ -11,10 +11,27 @@ It has 3 outputs :
 - a DAT : containing the table updated with all person detected by the system. Please refer below for parameter explanation.
 - a TOP : containing a debug view similar to Augmenta simulator.
 
+TOX Installation
+-------------------------------------
+Go to C:\Program Files\Derivative\TouchDesigner099\Samples\COMP
+
+Create an Augmenta folder
+
+Copy augmenta.tox file to this folder
+
+
 How to use
 -------------------------------------
+Open Palette Browser (Alt+l)
+
+At the top, under Derivative category, you should see an Augmenta folder.
+
+Drag and drop the augmenta TOX in your project
+
 If you don't have access to Augmenta system, you can test your creation with the [simulator](https://github.com/Theoriz/Augmenta-Simulator/releases).
+
 Check if your OSC output port in the simulator is the same as the augmenta TOX.
+
 You should see now the render output view moving according to the simulator data.
 
 Data
