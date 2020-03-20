@@ -24,7 +24,7 @@ How to test
 ------------------------------------
 Download the Augmenta [simulator](https://github.com/Theoriz/Augmenta-Simulator/releases).
 
-Check if your OSC output port in the simulator is the same as the oscPort of the Augmenta TOX.
+Check if your OSC output port in the simulator is the same as the OSC input port of the Augmenta TOX.
 
 You should see now the render output view moving according to the simulator data.
 
