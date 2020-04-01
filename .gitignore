@@ -3,3 +3,5 @@ Augmenta.*.toe
 */Backup
 */CrashAutoSave.*
 *.dmp
+Backup/
+AugmentaExample.*.toe
