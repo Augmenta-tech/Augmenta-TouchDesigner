@@ -6,7 +6,7 @@ A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](ht
 How to install
 -------------------------------------
 
-Go to `C:\Program Files\Derivative\TouchDesignerXXX\Samples\COMP`
+In your computer, go to the folder : `C:\Program Files\Derivative\TouchDesignerXXX\Samples\COMP`
 
 Create an Augmenta folder
 
@@ -14,7 +14,7 @@ Copy the *augmenta.tox* file to this folder
 
 How to use
 -------------------------------------
-Open *Palette Browser* (Alt+l)
+In Touch designer, open *Palette Browser* (Alt+l)
 
 At the top, under Derivative category, you should see an Augmenta folder.
 
