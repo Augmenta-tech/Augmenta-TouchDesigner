@@ -14,7 +14,7 @@ Copy the *augmenta.tox* file to this folder
 
 How to use
 -------------------------------------
-In Touch designer, open *Palette Browser* (Alt+l)
+In Touch designer, open *Palette Browser* (Ctrl+B)
 
 At the top, under Derivative category, you should see an Augmenta folder.
 
