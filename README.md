@@ -3,6 +3,8 @@
 
 A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](http://www.gamgie.com) and [THEORIZ](http://www.theoriz.com/en/).
 
+
+
 How to install
 -------------------------------------
 
@@ -49,4 +51,4 @@ https://github.com/Theoriz/Augmenta/wiki
 
 Version
 -------------
-TouchDesigner 2020.20620
+TouchDesigner 2020.42700
