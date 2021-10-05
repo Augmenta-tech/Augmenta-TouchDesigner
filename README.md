@@ -4,6 +4,19 @@
 A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](http://www.gamgie.com) and [THEORIZ](http://www.theoriz.com/en/).
 
 
+Exemple Scenes
+-------------------------------------
+### 0 - SOP
+This example uses SOP and particles
+
+![TD-SOP](https://user-images.githubusercontent.com/64955193/135990922-5dede4f0-ff97-479e-921b-e6aef9efb53b.gif)
+
+
+### 1 - TOP
+This example uses TOP and reaction diffusion
+
+![TopTD2 0](https://user-images.githubusercontent.com/64955193/136021020-8ad71680-81fa-4254-876b-115b768685d5.gif)
+
 
 How to install
 -------------------------------------
@@ -39,21 +52,6 @@ It has 3 outputs :
 - a CHOP : containing the scene parameter.
 - a DAT : containing the table updated with all person detected by the system. Please refer below for parameter explanation.
 - a TOP : containing a debug view similar to Augmenta simulator.
-
-
-Exemple Scenes
--------------------------------------
-### 0 - SOP
-This example uses SOP and particles
-
-![TD-SOP](https://user-images.githubusercontent.com/64955193/135990922-5dede4f0-ff97-479e-921b-e6aef9efb53b.gif)
-
-
-### 1 - TOP
-This example uses TOP and reaction diffusion
-
-![TopTD2 0](https://user-images.githubusercontent.com/64955193/136021020-8ad71680-81fa-4254-876b-115b768685d5.gif)
-
 
 Data
 -------------------------------------
