@@ -41,6 +41,14 @@ It has 3 outputs :
 - a TOP : containing a debug view similar to Augmenta simulator.
 
 
+Exemple Scenes
+-------------------------------------
+### 0 - SOP
+This example uses SOP and particles
+
+![TD-SOP](https://user-images.githubusercontent.com/64955193/135990922-5dede4f0-ff97-479e-921b-e6aef9efb53b.gif)
+
+
 Data
 -------------------------------------
 https://github.com/Theoriz/Augmenta/wiki#data
