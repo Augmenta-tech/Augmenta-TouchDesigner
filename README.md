@@ -9,7 +9,7 @@ Youtube tutorials
 https://www.youtube.com/watch?v=6OU6gbbc9cA&ab_channel=Augmenta
 
 
-Exemple Scenes
+Scene examples 
 -------------------------------------
 ### 0 - SOP
 This example uses SOP and particles
