@@ -4,7 +4,7 @@
 A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](http://www.gamgie.com) and [THEORIZ](http://www.theoriz.com/en/).
 
 
-Tutorial Youtube
+Youtube tutorials
 -------------------------------------
 https://www.youtube.com/watch?v=6OU6gbbc9cA&ab_channel=Augmenta
 
