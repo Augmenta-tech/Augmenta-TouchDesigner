@@ -60,9 +60,9 @@ It has 3 outputs :
 
 Data
 -------------------------------------
-https://github.com/Theoriz/Augmenta/wiki#data
+https://github.com/Theoriz/Augmenta/wiki/Data
 
-Documentation
+Doc
 -------------
 https://github.com/Theoriz/Augmenta/wiki
 
