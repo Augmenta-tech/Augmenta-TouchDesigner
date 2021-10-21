@@ -58,9 +58,9 @@ It has 3 outputs :
 - a DAT : containing the table updated with all person detected by the system. Please refer below for parameter explanation.
 - a TOP : containing a debug view similar to Augmenta simulator.
 
-With Notch 
+With [Notch](https://www.notch.one/)
 -------------------------------------
-Example with Notch block and TUIO/OSC data inside TouchDesigner
+Example with a Notch block and TUIO/OSC data in Touch Designer
 
 https://github.com/Augmenta-tech/Notch-with-Data-in-TD
 
