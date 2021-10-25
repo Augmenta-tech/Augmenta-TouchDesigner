@@ -55,6 +55,7 @@ TOX Explanation
 This Tox help you to receive and use Augmenta data.
 It has 3 outputs : 
 - a CHOP : containing the scene parameter.
+- a CHOP : containing a transform array for Notch
 - a DAT : containing the table updated with all person detected by the system. Please refer below for parameter explanation.
 - a TOP : containing a debug view similar to Augmenta simulator.
 
