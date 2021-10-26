@@ -1,0 +1,3 @@
+[submodule "Tox"]
+	path = Tox
+	url = https://github.com/Augmenta-tech/Augmenta-TouchDesigner_TOX.git
