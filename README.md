@@ -67,11 +67,11 @@ https://github.com/Augmenta-tech/Notch-with-Data-in-TD
 
 Data
 -------------------------------------
-https://github.com/Theoriz/Augmenta/wiki/Data
+https://github.com/Augmenta-tech/Augmenta/wiki/Data
 
 Doc
 -------------
-https://github.com/Theoriz/Augmenta/wiki
+https://github.com/Augmenta-tech/Augmenta/wiki
 
 Version
 -------------
