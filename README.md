@@ -4,10 +4,9 @@
 A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](http://www.gamgie.com) and [THEORIZ](http://www.theoriz.com/en/).
 
 
-Youtube tutorials
+Youtube tutorial
 -------------------------------------
-https://www.youtube.com/watch?v=6OU6gbbc9cA&ab_channel=Augmenta
-
+https://www.youtube.com/watch?v=7YzUEzS3R2g
 
 Scene examples 
 -------------------------------------
@@ -42,6 +41,17 @@ Drag and drop the augmenta TOX in your project
 
 How to test
 ------------------------------------
+
+**TUIO (default)**
+
+Open Augmenta Fusion, add a generator source, then a TUIO output. 
+
+Check that the output port in Fusion is the same as the TUIO port set in the Augmenta TOX.
+
+Place a generated point by holding "alt" key while clicking in the source (this way it will stay after releasing the mouse). Then look in TouchDesigner, you should see a renderepoint at the corresponding position.
+
+**OSC**
+
 Download the Augmenta [simulator](https://github.com/Theoriz/Augmenta-Simulator/releases).
 
 Check if your OSC output port in the simulator is the same as the OSC input port of the Augmenta TOX.
