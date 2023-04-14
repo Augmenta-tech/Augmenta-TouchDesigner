@@ -1,69 +1,90 @@
-# Getting started with TouchDesigner
+# Readme.md
 
-Augmenta can be used with [TouchDesigner](https://derivative.ca/) to create real-time interactive content. We provide a plugin as Getting started with TouchDesignerGetting started with TouchDesignerwell as example files to help you get started.
+### Augmenta for Touch Designer
 
-The example TouchDesigner project can be found on [this](https://github.com/Augmenta-tech/Augmenta-TouchDesigner) Github repository.
+A [TouchDesigner](https://derivative.ca/) Augmenta plugin created by [Gamgie](http://www.gamgie.com/) and [THEORIZ](http://www.theoriz.com/en/).
 
-<figure><img src=".gitbook/assets/AugmentaTD.gif" alt=""><figcaption><p>Example project using Augmenta in TouchDesigner</p></figcaption></figure>
+### Youtube tutorial
 
-## Getting started with the example
+[https://www.youtube.com/watch?v=7YzUEzS3R2g](https://www.youtube.com/watch?v=7YzUEzS3R2g)
 
-Prerequisites:
+### Scene examples
 
-* Having TouchDesigner installed on your computer
+#### 0 - SOP
 
-### Video tutorial
+This example uses SOP and particles
 
-{% embed url="https://www.youtube.com/watch?v=7YzUEzS3R2g" %}
+[![TD-SOP](https://user-images.githubusercontent.com/64955193/135990922-5dede4f0-ff97-479e-921b-e6aef9efb53b.gif)](https://user-images.githubusercontent.com/64955193/135990922-5dede4f0-ff97-479e-921b-e6aef9efb53b.gif)
 
+#### 1 - TOP
 
+This example uses TOP and reaction diffusion
 
-This video shows how to open the example in TouchDesigner and how to set up Augmenta Fusion to send TUIO data to it.
+[![TopTD2 0](https://user-images.githubusercontent.com/64955193/136021020-8ad71680-81fa-4254-876b-115b768685d5.gif)](https://user-images.githubusercontent.com/64955193/136021020-8ad71680-81fa-4254-876b-115b768685d5.gif)
 
-### Written tutorial
+### How to install
 
-Go to the [Augmenta-TouchDesigner](https://github.com/Augmenta-tech/Augmenta-TouchDesigner) Github repository.
+In your computer, go to the folder : `C:\Program Files\Derivative\TouchDesignerXXX\Samples\COMP`
 
-Download the zip file containing the repository (click on "<> Code", then "Download ZIP". Alternatively you can clone the repository if you prefer.
+Create an Augmenta folder
 
-Move the zip file to some location on your hard drive. Extract it.
+Copy the _augmenta.tox_ file to this folder
 
-Enter the extracted folder and double click on Augmenta-Example.toe to open the TouchDesigner project file containing the examples.
+### How to use
 
-Once TouchDesigner is open, you can see the example's processing graph with:
+In Touch designer, open _Palette Browser_ (Ctrl+B)
 
-* An "Augmenta" box, which is the .tox that takes Augmenta inputs
-* A CHOP that will contain the Augmenta scene infos (width, height, resolution)
-* A DAT that will contain the detected objects data
-* A SOP example using the Augmenta data
-* A TOP example using the Augmenta data
+At the top, under Derivative category, you should see an Augmenta folder.
 
-The first thing you can do is to add the Augmenta tox to your saved components. Open the "Palette" panel, then in the "My Components" section create a folder (through right click). Finally drag the "Augmenta" tox on that new folder to save it. Now you can search it there if you want to start a new project.
+Drag and drop the augmenta TOX in your project
 
-The next step is to open Augmenta Fusion. In the "Sources" pannel, add a new generator source. This will allow you to generate points to test your interactive content. Untick the "Auto clear" option so that the points in the generator will stay. If you click somewhere while holding the ALT key in the generator source it will create a point that will stay there. You can also just click but the point will disappear as soon as you release the mouse button.
+### How to test
 
-We now have to add an output in Augmenta Fusion, to send the generated data to TouchDesigner. Go to the Outputs pannel and right click in it (or click on the green "+" button) and select "TouchDesigner" > "TUIO (default)" to create a TUIO output with the TouchDesigner preset. Check which port was assigned to the output (it should default to 13000).
+**TUIO (default)**
 
-We can now go back to TouchDesigner to see if we receive data. Click on the "Augmenta" tox, select the "Augmenta" tab and check that the "Protocol" field is set to "TUIO" and the "OSC / TUIO port" field is the same as the output port in Augmenta Fusion.&#x20;
+_TUIO output is more stable the OSC with TouchDesigner, if you already have access to Augmenta Fusion it is the prefered protocol_
 
-You should now see rendered objects in the debug view and in the different example SOP/TOPS.
+Open Augmenta Fusion, add a generator source, then a TUIO output.
 
-## Workflow in details
+Check that the output port in Fusion is the same as the TUIO port set in the Augmenta TOX.
 
-Augmenta Fusion can send data to TouchDesigner through 2 protocols:
+Place a generated point by holding "alt" key while clicking in the source (this way it will stay after releasing the mouse). Then look in TouchDesigner, you should see a renderepoint at the corresponding position.
 
-* TUIO : the preferred way, more stable and best integrated with TouchDesigner
-* OSC : our own protocol, parsed in the .tox
+**OSC**
 
-If you have Augmenta Fusion, you should prefer using the TUIO outputs.
+_Using the OSC protocol, you can use the simulator which is available to test for anyone_
 
-If you do not have access to Augmenta Fusion, you can use the [Augmenta Simulator](https://github.com/Augmenta-tech/Augmenta-Simulator) to send OSC data to the .tox.
+Download the Augmenta [simulator](https://github.com/Theoriz/Augmenta-Simulator/releases).
 
-## More ressources
+Check if your OSC output port in the simulator is the same as the OSC input port of the Augmenta TOX.
 
-### Using Notch in TouchDesigner
+You should see now the render output view moving according to the simulator data.
 
-We also have a video tutorial on how to set up a Notch block inside TouchDesigner [here](https://youtu.be/SuFydPuyIlI).
+An example file is provided to see it in action.
 
-The corresponding example files can be found [here](https://github.com/Augmenta-tech/Notch-with-Data-in-TD).
+### TOX Explanation
 
+This Tox help you to receive and use Augmenta data. It has 3 outputs :
+
+* a CHOP : containing the scene parameter.
+* a CHOP : containing a transform array for Notch
+* a DAT : containing the table updated with all person detected by the system. Please refer below for parameter explanation.
+* a TOP : containing a debug view similar to Augmenta simulator.
+
+### With [Notch](https://www.notch.one/)
+
+Example with a Notch block and TUIO/OSC data in Touch Designer
+
+[https://github.com/Augmenta-tech/Notch-with-Data-in-TD](https://github.com/Augmenta-tech/Notch-with-Data-in-TD)
+
+### Data
+
+[https://github.com/Augmenta-tech/Augmenta/wiki/Data](https://github.com/Augmenta-tech/Augmenta/wiki/Data)
+
+### Doc
+
+[https://github.com/Augmenta-tech/Augmenta/wiki](https://github.com/Augmenta-tech/Augmenta/wiki)
+
+### Version
+
+TouchDesigner 2020.42700

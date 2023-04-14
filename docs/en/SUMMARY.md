@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Getting started with TouchDesigner](README.md)
-* [Readme.md](readme.md.md)
+* [README](README.md)
+* [Getting started with TouchDesigner](<README (1).md>)
