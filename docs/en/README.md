@@ -40,27 +40,13 @@ Drag and drop the augmenta TOX in your project
 
 ### How to test
 
-**TUIO (default)**
+**OSCV3**
 
-_TUIO output is more stable the OSC with TouchDesigner, if you already have access to Augmenta Fusion it is the prefered protocol_
+Open Augmenta Fusion, add a generator source, then a OSCV3 output for Touch Designer.
 
-Open Augmenta Fusion, add a generator source, then a TUIO output.
-
-Check that the output port in Fusion is the same as the TUIO port set in the Augmenta TOX.
+Check that the output port in Fusion is the same as the OSCV3 port set in the Augmenta TOX.
 
 Place a generated point by holding "alt" key while clicking in the source (this way it will stay after releasing the mouse). Then look in TouchDesigner, you should see a renderepoint at the corresponding position.
-
-**OSC**
-
-_Using the OSC protocol, you can use the simulator which is available to test for anyone_
-
-Download the Augmenta [simulator](https://github.com/Theoriz/Augmenta-Simulator/releases).
-
-Check if your OSC output port in the simulator is the same as the OSC input port of the Augmenta TOX.
-
-You should see now the render output view moving according to the simulator data.
-
-An example file is provided to see it in action.
 
 ### TOX Explanation
 
